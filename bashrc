@@ -117,9 +117,6 @@ if [ -s ~/.bash_prompt.sh ]; then
 fi
 
 
-export HISTSIZE=8000
-export HISTFILESIZE=8000
-
 export EC2_HOME=$HOME/.ec2
 export AWS_AUTO_SCALING_HOME=$HOME/.autoscaling
 export AWS_CLOUDWATCH_HOME=$HOME/.cloud-watch
@@ -161,3 +158,12 @@ export COPYFILE_DISABLE=true
 #export LC_ALL=
 
 alias mg="cd ~/WorkPlace/mongu.ru.git/ ; git checkout dev ; vim"
+
+export GOPATH="$HOME/WorkPlace/golang/packages"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+if [ -e /home/felippe/.rvm/scripts/rvm ]; then
+    . /home/felippe/.rvm/scripts/rvm
+fi
+export HISTSIZE=5000
+export HISTFILESIZE=5000
