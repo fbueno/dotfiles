@@ -78,17 +78,17 @@ function link_files
 }
 
 
-function make_dirs 
-{
+#function make_dirs 
+#{
 #pass
 
-}
+#}
 
-function install_keys {
+#function install_keys {
 
 #pass
 
-}
+#}
 
 cd $HOME
 set_download_command
