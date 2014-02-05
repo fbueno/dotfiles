@@ -104,5 +104,5 @@ else
 fi
 
 link_files
-
+source ~/.bashrc
 
