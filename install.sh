@@ -9,6 +9,7 @@ FILES_LIST="xbindkeysrc bash_prompt.sh bashrc gitconfig vim"
 EXTRA_FILE_COMMANDS=".vim/vimrc:.vimrc"
 PACKAGES="git python-pip"
 PIP_PACKAGES="jedi"
+DIRS=".vimfiles"
 
 
 function install_packages 
@@ -78,11 +79,13 @@ function link_files
 }
 
 
-#function make_dirs 
-#{
-#pass
-
-#}
+function make_dirs 
+{
+    for d in $DIRS
+    do
+        mkdir -p ~/$d
+    done
+}
 
 #function install_keys {
 
