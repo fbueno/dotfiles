@@ -96,7 +96,8 @@
 ##"xterm -bc -foreground grey5 -background white"
 ##        control + alt + t
 ##
-"gnome-terminal --hide-menubar"
+##"gnome-terminal --hide-menubar"
+"/opt/efl/bin/terminology"
 	control + alt + t
 
 "MAIL="imaps://@i/" xterm -bc -T mutt -g 115x30 -e mutt"

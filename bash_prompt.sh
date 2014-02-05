@@ -81,9 +81,18 @@ function set_git_branch {
 # previous command.
 function set_prompt_symbol () {
   if test $1 -eq 0 ; then
+    if [ $USER = "root" ]; then
+      PROMPT_SYMBOL="#"
+    else
       PROMPT_SYMBOL="\$"
+    fi
   else
+    if [ $USER = "root" ]; then
+      PROMPT_SYMBOL="${LIGHT_RED}#${COLOR_NONE}"
+    else
       PROMPT_SYMBOL="${LIGHT_RED}\$${COLOR_NONE}"
+    fi
+
   fi
 }
 
@@ -113,6 +122,7 @@ function set_bash_prompt () {
   fi
 
   # Set the bash prompt variable.
+
   PS1="${PYTHON_VIRTUALENV}${GREEN}\u@\h ${YELLOW}\w${COLOR_NONE}${BRANCH}${PROMPT_SYMBOL}"
 }
 
