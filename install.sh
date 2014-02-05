@@ -3,7 +3,6 @@
 REPO_URL="https://github.com/fbueno/dotfiles.git"
 ARCHIVE_URL="https://github.com/fbueno/dotfiles/archive/master.zip"
 DIR_NAME=".dotfiles"
-GIT=$(which git)
 DOWNLOAD_CMDS="wget curl lynx"
 FILES_LIST="xbindkeysrc bash_prompt.sh bashrc gitconfig vim"
 EXTRA_FILE_COMMANDS=".vim/vimrc:.vimrc"
@@ -100,11 +99,11 @@ if [ -d $DIR_NAME ]; then
     rm -rf $DIR_NAME
 fi
 
-if [ -x $GIT ]; then
-    git_clone
-else
-    download_files
-fi
+#if [ -x $GIT ]; then
+git_clone
+#else
+#    download_files
+#fi
 
 link_files
 
