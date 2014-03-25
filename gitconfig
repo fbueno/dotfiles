@@ -17,7 +17,7 @@
     l = log
     df = diff
 [core]
-	excludesfile = /Users/felippe/.gitignore_global
+	excludesfile = /home/felippe/WorkPlace/dotfiles.git/gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

@@ -105,7 +105,7 @@ autocmd bufnewfile,bufread *.rhtml setlocal ft=eruby
 autocmd BufNewFile,BufRead *.mako setlocal ft=mako
 autocmd BufNewFile,BufRead *.tmpl setlocal ft=htmljinja
 autocmd BufNewFile,BufRead *.py_tmpl setlocal ft=python
-autocmd BufNewFile,BufRead *.html,*.htm,*.haml,*.daml  call s:SelectHTML()
+autocmd BufNewFile,BufRead *.html,*.htm,*.haml,*.daml,*.twig  call s:SelectHTML()
 let html_no_rendering=1
 
 let g:closetag_default_xml=1

@@ -144,6 +144,9 @@ if [ -f ~/.bin/funcoeszz ]; then
     . ~/.bin/funcoeszz
 fi
 
+if [ -f ~/Dropbox/WorkPlace/dotfiles.git/git-completion.bash ]; then
+    . ~/Dropbox/WorkPlace/dotfiles.git/git-completion.bash
+fi
 
 export COPYFILE_DISABLE=true
 

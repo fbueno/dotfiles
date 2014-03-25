@@ -15,14 +15,16 @@ function install_packages
 {
     if [ -x /usr/bin/apt-get ]; then
        sudo apt-get -y install $PACKAGES
+       sudo pip install $PIP_PACKAGES
    else
        yum -y install $PACKAGES
        #yum -y install `echo $PACKAGES | sed -e 's/python-pip//g'`
        $cmd_path http://peak.telecommunity.com/dist/ez_setup.py
        python ez_setup.py 
        easy_install pip
+       sudo pip install $PIP_PACKAGES
    fi
-   pip install $PIP_PACKAGES
+
 }
 
 
