@@ -112,9 +112,9 @@ if [ -d ~/.bin ]; then
 	PATH="$PATH:~/.bin"
 fi
 
-#if [ -s ~/.bash_prompt.sh ]; then
-#	. ~/.bash_prompt.sh
-#fi
+if [ -s ~/Dropbox/WorkPlace/dotfiles.git/shell_prompt.sh ]; then
+	. ~/Dropbox/WorkPlace/dotfiles.git/shell_prompt.sh
+fi
 
 
 export EC2_HOME=$HOME/.ec2
@@ -170,8 +170,8 @@ export GOPATH="$HOME/WorkPlace/golang/packages"
 #fi
 export HISTSIZE=5000
 export HISTFILESIZE=5000
-function _update_ps1() {
-       export PS1="$(~/Dropbox/WorkPlace/dotfiles.git/powerline-shell.py $? 2> /dev/null)"
-    }
+#function _update_ps1() {
+#       export PS1="$(~/Dropbox/WorkPlace/dotfiles.git/powerline-shell.py $? 2> /dev/null)"
+#    }
 
-export PROMPT_COMMAND=_update_ps1
+#export PROMPT_COMMAND=_update_ps1
