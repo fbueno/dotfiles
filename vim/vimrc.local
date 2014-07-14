@@ -58,3 +58,5 @@ set visualbell
 set t_Co=256
 call pathogen#infect()
 colorscheme molokai
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
